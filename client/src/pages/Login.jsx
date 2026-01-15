@@ -12,6 +12,10 @@ const Login = () => {
     const [error, setError] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
+    useEffect(() => {
+        console.log("Current API URL:", import.meta.env.VITE_API_URL);
+    }, []);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError('');

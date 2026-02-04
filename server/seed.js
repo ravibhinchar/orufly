@@ -2,7 +2,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const Product = require('./models/Product');
 
-// Mongoose 9+ does not need useNewUrlParser/useUnifiedTopology
+
 mongoose.connect(process.env.MONGODB_URI)
     .then(async () => {
         console.log("MongoDB Connected for Seeding to:", process.env.MONGODB_URI);
@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGODB_URI)
                 name: "Minimalist Mechanical Keyboard",
                 description: "Tactile switches and customizable RGB lighting for the ultimate typing experience.",
                 price: 159,
-                image: "https://images.unsplash.com/photo-1587829741301-308231f890f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                image: "https://imgs.search.brave.com/ZorOFH28N06T5KQErmtFOPY5Bkyz9Hqsk6YnedQWK1I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9nbGFj/aWVycGNnYW1pbmcu/Y29tL2Nkbi9zaG9w/L3Byb2R1Y3RzL2ds/YWNpZXItbWluaW1h/bGlzdC1rZXlib2Fy/ZC10dXJxdW9pc2Ut/NTk5MjIyLmpwZz92/PTE3NDA1NDgwMzUm/d2lkdGg9MTk0Ng"
             },
             {
                 name: "Smart Watch Series X",
@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGODB_URI)
                 name: "Modern Desk Lamp",
                 description: "A sleek, modern aesthetic with adjustable brightness and color temperature.",
                 price: 89,
-                image: "https://images.unsplash.com/photo-1507473885765-e6ed05e5333e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                image: "https://imgs.search.brave.com/46_wSocTmaC66MCySQ93n3X0jjElFFf3bPZbpOIF9-Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM1/NTUzNzc0My9waG90/by9kZXNrLWxhbXAt/d2l0aC1zcG90bGln/aHQtYmxhY2stYmFj/a2dyb3VuZC13aXRo/LWNvcHktc3BhY2Uu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXNWbE1iNDdWLS1L/UG1CYXVuQk9lUHFS/UzBlRFBkMXdFZ2pY/MEEyaG9CQ1k9"
             },
             {
                 name: "Leather Laptop Messenger",

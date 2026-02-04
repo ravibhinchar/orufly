@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -12,9 +12,7 @@ const Login = () => {
     const [error, setError] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
-    useEffect(() => {
-        console.log("Current API URL:", import.meta.env.VITE_API_URL);
-    }, []);
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
